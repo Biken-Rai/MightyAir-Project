@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css.css">
+  <title>Mighty Air</title>
+</head>
+<body>
+
+<!-- Top Navigation Bar -->
+<nav class="navbar">
+  <!-- Left: Logo -->
+  <div class="nav-left">
+    <img src="image/Logo.png" alt="Mighty Air Logo">
+  </div>
+
+  <!-- Right: Menu Links -->
+  <ul class="nav-links">
+    <li><a href="#" onclick="showHome(); return false;"><b>Home</b></a></li>
+
+    <li class="services-menu">
+      <a href="#" onclick="toggleServicesMenu(); return false;"><b>Services</b></a>
+      <ul id="services-submenu">
+        <li><a href="#" onclick="showServiceDetail('Heat Pumps'); return false;">Heat Pumps</a></li>
+        <li><a href="#" onclick="showServiceDetail('Air Conditioning'); return false;">Air Conditioning</a></li>
+        <li><a href="#" onclick="showServiceDetail('Ducted Systems'); return false;">Ducted Systems</a></li>
+        <li><a href="#" onclick="showServiceDetail('Light Commercial Air Conditioning'); return false;">Light Commercial Air Conditioning</a></li>
+        <li><a href="#" onclick="showServiceDetail('Multi Room Heat Pumps'); return false;">Multi Room Heat Pumps</a></li>
+      </ul>
+    </li>
+
+    <li><a href="#" onclick="showFAQs(); return false;"><b>FAQs</b></a></li>
+    <li><a href="#" onclick="showAbout(); return false;"><b>About</b></a></li>
+    <li><a href="#" onclick="showContact(); return false;"><b>Contact</b></a></li>
+  </ul>
+</nav>
+
+<div class="content">
+<main>
+  <div id="main-content"></div>
+</main>
+</div>
+
+<!-- Footer -->
+<footer>
+  <p>&copy; <b>2025 Mighty Air | Visit us on: <a href="https://www.mightyair.co.nz" target="_blank" style="color:inherit;text-decoration:none;">www.mightyair.co.nz</a></b></p>
+</footer>
+
+<script src="js.js"></script>
+</body>
+</html>
